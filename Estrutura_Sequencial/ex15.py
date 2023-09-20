@@ -1,0 +1,13 @@
+hourMonth = float(input("Quanto você ganha por hora? "))
+workedHours = float(input("Quantas horas trabalhadas no mês? "))
+grossSalary = (hourMonth * workedHours)
+ir = float(grossSalary * 0.11)
+inss = float(grossSalary * 0.08)
+sindicato = float(grossSalary * 0.05)
+liquidSalary = float(grossSalary - ir - inss - sindicato)
+
+print("Seu Salário bruto é " + str(grossSalary))
+print("O desconto do IR foi de R$" + str(ir))
+print("O desconto do INSS foi de R$" + str(inss))
+print("O desconto do Sindicato foi de R$" + str(sindicato))
+print("Seu salário liquido é R$" + str(liquidSalary))
